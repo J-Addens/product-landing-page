@@ -10,3 +10,17 @@
 body {
   font-family: sans-serif;
 }
+.navbar  {
+  position: fixed;
+  width: 100%
+  background-color: white;
+  top: 0;
+}
+.navbar a {
+  float: center;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
