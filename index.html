@@ -1,108 +1,82 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <script src="https://kit.fontawesome.com/ea2c050b50.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="css/customstyle.css">
-  <style>
-    @media only screen and (max-width: 600px) {
-      body {
-        background-color: lightblue;
+  <head>
+    <script src="https://kit.fontawesome.com/ea2c050b50.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/customstyle.css">
+    <style>
+      @media only screen and (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
       }
-    }
-    .flex-container {
-      display: flex;
+      .flex-container {
+        display: flex;
+      }
+    </style>
+  </head>
 
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-    }
-  </style>
-</head>
-<div class="navbar">
-  <center>
-  <header id="header">
-      <img
-        id="header-img"
-          src="https://truihanoulleblog.files.wordpress.com/2015/06/elektrogirl-logo-zonder-sq.jpg"
-            alt="logo"
-              style="width:128px;height:128px;"
-              />
+  <body>
+    <header id="header">
+      <div class="navbar">
         <nav id="nav-bar">
-          <a class="nav-link" href="#features">Features</a> |
-          <a class="nav-link" href="#impression">Impressions</a> |
+          <img id="header-img" src="images/zerologo.jpg" alt="logo" style="width:18%;"/>
+          <a class="nav-link" href="#features">Features</a>|
+          <a class="nav-link" href="#impression">Impressions</a>|
           <a class="nav-link" href="#pricing">Pricing</a>
         </nav><br>
-  </header>
-</center>
-</div>
-
-<body>
-  <section id="features">
-    <center>
-    <i class="fas fa-globe"></i>
-    <h2>Premium Materials</h2>
-    <p>Made from the best materials available.</p>
-    <i class="fas fa-fist-raised"></i>
-    <h2>Durable</h2>
-    <p>Made for the roughest terrains.</p>
-    <i class="fas fa-check-double"></i>
-    <h2>Quality Assurance</h2>
-    <p>We guarentee your electric motorbike lasts a lifetime!</p>
-  </center>
-  </section>
-
-  <section id="impression">
-    <center>
-      <h2>Impression video</h2>
-      <iframe id="video" width="560" height="315"
-      src="https://www.youtube.com/embed/8vKL5Dw4BGQ"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-    </center>
-  </section>
-
-  <section id="information">
-    <center>
-    <h2>Interested in our electrical gems?</h2>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <input name="email" id="email" type="email" placeholder="Enter your email address" required>
-      <input id="submit" type="submit" name="submit" value="GET STARTED!">
-    </form>
-  </center>
-  </section>
-
-  <section id="pricing">
-    <center>
-      <div class="flexbox">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
       </div>
+    </header>
+
+    <div class="main">
+      <section id="features">
+        <center>
+        <i class="fas fa-globe"></i>
+        <h2>Premium Materials</h2>
+        <p>Made from the best materials available.</p>
+        <i class="fas fa-fist-raised"></i>
+        <h2>Durable</h2>
+        <p>Made for the roughest terrains.</p>
+        <i class="fas fa-check-double"></i>
+        <h2>Quality Assurance</h2>
+        <p>We guarentee your electric motorbike lasts a lifetime!</p>
+      </center>
+      </section>
+    </div>
+
+    <section id="impression">
+      <center>
+        <h2>Impression video</h2>
+        <iframe id="video" width="560" height="315"
+        src="https://www.youtube.com/embed/8vKL5Dw4BGQ"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      </center>
+    </section>
+
+    <section id="information">
+      <center>
+      <h2>Interested in our electrical gems?</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+        <input id="submit" type="submit" name="submit" value="GET STARTED!">
+      </form>
     </center>
-  </section>
+    </section>
 
-</body>
-<footer>
-</footer>
-<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<script type="text/javascript">
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+    <section id="pricing">
+      <center>
+        <div class="flexbox">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </center>
+    </section>
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-if (window.pageYOffset >= sticky) {
-  navbar.classList.add("sticky")
-} else {
-  navbar.classList.remove("sticky");
-}
-}
-</script>
+  </body>
+  <footer>
+  </footer>
+  <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script type="text/javascript"></script>
 </html>
